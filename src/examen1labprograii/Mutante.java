@@ -18,7 +18,22 @@ public class Mutante extends Persona{
         
         
     }
+
+    public ArrayList<String> getFactor() {
+        return factor;
+    }
+
+    public void setFactor(ArrayList<String> factor) {
+        this.factor = factor;
+    }
     
+    public void final_choice(Persona p1,Persona p2){
+    }
+
+    @Override
+    public String toString() {
+        return "Mutante{" + "factor=" + factor + '}';
+    }
  
     
 }

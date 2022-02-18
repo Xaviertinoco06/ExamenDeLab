@@ -8,20 +8,20 @@ package examen1labprograii;
  *
  * @author xavie
  */
-public class PersonaNormal extends Persona{
+public class deidad extends Extraterrestres{
+      private boolean creyentes;
+    private String religion;
     
-    
-    public PersonaNormal(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, String mental, String Fisica) {
+    public deidad(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, String mental, String Fisica) {
         super(nombre, poder, debilidad, HereoVillano, fuerza, mental, Fisica);
-        
-       // public abstract void final_chance (Personas p1,p2){
-            
-            
-        }
+    }
         public void final_choice(Persona p1,Persona p2){
     }
-        
-    }
-    
-    
 
+    @Override
+    public String toString() {
+        return "deidad{" + "creyentes=" + creyentes + ", religion=" + religion + '}';
+    }
+        
+    
+}

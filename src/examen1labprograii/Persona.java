@@ -92,7 +92,7 @@ public class Persona {
         this.escuadron = escuadron;
     }
 
-    public void final_choice(Perona p1,p2){
+    public void final_choice(Persona p1,Persona p2){
     }
     
     

@@ -29,6 +29,11 @@ public class Universo {
     public void setSquads(ArrayList<Escuadron> squads) {
         this.squads = squads;
     }
+
+    @Override
+    public String toString() {
+        return "Universo{" + "nombre=" + nombre + ", squads=" + squads + '}';
+    }
     
     
     
