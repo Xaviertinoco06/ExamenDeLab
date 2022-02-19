@@ -11,7 +11,7 @@ package examen1labprograii;
  */
 public class Alien extends Extraterrestres{
     
-    public Alien(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, String mental, String Fisica) {
+    public Alien(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, int mental, int Fisica) {
         super(nombre, poder, debilidad, HereoVillano, fuerza, mental, Fisica);
     }
     

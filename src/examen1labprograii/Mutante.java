@@ -19,6 +19,13 @@ public class Mutante extends Persona{
         
     }
 
+    Mutante(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, int mental, int fisica) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    
+
     public ArrayList<String> getFactor() {
         return factor;
     }

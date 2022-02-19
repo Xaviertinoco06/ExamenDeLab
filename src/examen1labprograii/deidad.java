@@ -12,7 +12,7 @@ public class deidad extends Extraterrestres{
       private boolean creyentes;
     private String religion;
     
-    public deidad(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, String mental, String Fisica) {
+    public deidad(String nombre, String poder, String debilidad, String HereoVillano, int fuerza, int mental, int Fisica) {
         super(nombre, poder, debilidad, HereoVillano, fuerza, mental, Fisica);
     }
         public void final_choice(Persona p1,Persona p2){

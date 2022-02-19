@@ -11,12 +11,19 @@ import java.util.ArrayList;
  * @author xavie
  */
 public class Escuadron {
+
     private String nombreEscuadron;
-    private String Lugar;
-    private String  Base;
+    private String lugar;
     private String lider;
-    private boolean HereoVillano;
-    ArrayList<Persona>miembros=new ArrayList();
+    private String HereoVillano;
+    ArrayList<Persona> escuadron = new ArrayList();
+
+    public Escuadron(String nombreEscuadron, String Lugar, String lider, String HereoVillano) {
+        this.nombreEscuadron = nombreEscuadron;
+        this.lugar = lugar;
+        this.lider = lider;
+        this.HereoVillano = HereoVillano;
+    }
 
     public String getNombreEscuadron() {
         return nombreEscuadron;
@@ -27,19 +34,11 @@ public class Escuadron {
     }
 
     public String getLugar() {
-        return Lugar;
+        return lugar;
     }
 
     public void setLugar(String Lugar) {
-        this.Lugar = Lugar;
-    }
-
-    public String getBase() {
-        return Base;
-    }
-
-    public void setBase(String Base) {
-        this.Base = Base;
+        this.lugar = Lugar;
     }
 
     public String getLider() {
@@ -50,27 +49,25 @@ public class Escuadron {
         this.lider = lider;
     }
 
-    public boolean isHereoVillano() {
+    public String isHereoVillano() {
         return HereoVillano;
     }
 
-    public void setHereoVillano(boolean HereoVillano) {
+    public void setHereoVillano(String HereoVillano) {
         this.HereoVillano = HereoVillano;
     }
 
     public ArrayList<Persona> getMiembros() {
-        return miembros;
+        return escuadron;
     }
 
     public void setMiembros(ArrayList<Persona> miembros) {
-        this.miembros = miembros;
+        this.escuadron = miembros;
     }
 
     @Override
     public String toString() {
-        return "Escuadron{" + "nombreEscuadron=" + nombreEscuadron + ", Lugar=" + Lugar + ", Base=" + Base + ", lider=" + lider + ", HereoVillano=" + HereoVillano + ", miembros=" + miembros + '}';
+        return "Escuadron{" + "nombreEscuadron=" + nombreEscuadron + ", Lugar=" + lugar + ", lider=" + lider + ", HereoVillano=" + HereoVillano + ", miembros=" + escuadron + '}';
     }
-    
-    
-    
+
 }
